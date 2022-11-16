@@ -30,10 +30,13 @@ Mastodon is the closest Fediverse analog to Twitter, and Twitter is my audience 
 
 ## I Hate the server I joined!  It's slow!  The mods hate me!
 
-  * [^1]: If you pick a server and it's performing badly or the community sucks, you _can_ jump servers. Create a new account, mark it as an alias of your old account, then tell the old account to migrate to the new one. Whole process takes 5 minutes. 
+[^1]:
+
+If you pick a server and it's performing badly or the community sucks, you _can_ jump servers. Create a new account, mark it as an alias of your old account, then tell the old account to migrate to the new one. Whole process takes 5 minutes.
+
 Remember that Mastodon is like if Twitter were hosted like e-mail. From a technical standpoint, it kinda doesn't matter which server you're on. From a community or performance standpoint, it can matter.
   
-    But get your feet wet first; don't let perfect be your enemy. 
+But get your feet wet first; don't let perfect be your enemy. 
 
 
 ## More notes on etiquette
