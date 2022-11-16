@@ -65,4 +65,4 @@ Come, join us! Get over here before the bird site collapses under the weight of 
 
 -----
 
-[^2]: Why I don't recommend my current mstdn host: they're a small, individual server that I elbowed my way into. Potentially flooding my 1,400 followers to a host that had 140 users just last week would be a dickish to [@trixter](https://retro.pizza/@trixter) - who you should absolutely follow.
+[^2]: Why I don't recommend my current mstdn host: they're a small, individual server that I elbowed my way into. Potentially flooding my 1,400 followers to a host that had 140 users just last week would be dickish to [@trixter](https://retro.pizza/@trixter) - who you should absolutely follow.
