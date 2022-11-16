@@ -20,6 +20,8 @@ That's it!
 
 ## Why Mastodon?
 
+[As](https://www.reuters.com/technology/exclusive-where-did-tweeters-go-twitter-is-losing-its-most-active-users-internal-2022-10-25/) [Twitter](https://www.technologyreview.com/2022/11/08/1062886/heres-how-a-twitter-engineer-says-it-will-break-in-the-coming-weeks/) [slowly](https://fortune.com/2022/11/15/elon-musk-twitter-engineer-fired/) [self-destructs](https://www.ign.com/articles/twitters-two-factor-authentication-started-failing-for-certain-users), you'll be looking for something to fill the combined needs of "I wanna see what's going on" and "I want to scream into the void".
+
 Mastodon is the closest Fediverse analog to Twitter, and Twitter is my audience for this document.  It has features that Twitter doesn't, and lacks features Twitter supports (for now):
 
 * 500 character limit on posts, rather than 280
