@@ -4,7 +4,7 @@
 
 The Fediverse.  It's the term used for the federated server network that's used by the Twitter-like [Mastodon](https://joinmastodon.org), the Instagram-like [Pixelfed](https://pixelfed.org/), the YouTube-like [PeerTube](https://joinpeertube.org/en), and many others.
 
-Your Fediverse account is like an e-mail account - that is, you're `a user` at `a server`.  You don't need to spin up your own server (though, you can), nor do you need to think too hard about which server you join (though, it can matter, long-term[^1]).
+Your Fediverse account is like an e-mail account - that is, you're `a user` at `a server`.  You don't need to spin up your own server (though, you can), nor do you need to think too hard about which server you join (though, it can matter, long-term).
 
 In this document, I'm focused on getting you onto Mastodon.
 
@@ -29,8 +29,6 @@ Mastodon is the closest Fediverse analog to Twitter, and Twitter is my audience 
 * If you own a piece of the web, you can self-verify your Mastodon against it by adding `<a rel="me" href="https://retro.pizza/@fordiman" title="Mastodon"></a>` somewhere on the page.
 
 ## I Hate the server I joined!  It's slow!  The mods hate me!
-
-[^1]:
 
 If you pick a server and it's performing badly or the community sucks, you _can_ jump servers. Create a new account, mark it as an alias of your old account, then tell the old account to migrate to the new one. Whole process takes 5 minutes.
 
