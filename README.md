@@ -30,7 +30,7 @@ Mastodon is the closest Fediverse analog to Twitter, and Twitter is my audience 
 
 ## I Hate the server I joined!
 
-### It's slow!
+### It's slow! They're only talking about 1970's Battlestar Galactica!
 
 If you pick a server and it's performing badly or the community sucks, you _can_ jump servers. Create a new account, mark it as an alias of your old account, then tell the old account to migrate to the new one. Whole process takes 5 minutes.
 
