@@ -26,7 +26,7 @@ Mastodon is the closest Fediverse analog to Twitter, and Twitter is my audience 
 * "Content warnings" as a first-class feature.  They're about equivalent to subject lines, and people in the Fediverse use them to keep their timeline tidy, and to avoid seeing content they'd rather not (e.g., porn, gore, violence).  Basically, your use of them lets others determine their own level of engagement.  You're expected to use them, but they're not mandatory.  It's a matter of politeness.
 * There is no text search, so #HashTag liberally.
 * "Favorite" is not "like" - there's no favorite-based algorithm to tune your feed - but you can follow hashtags.
-* If you own a piece of the web, you can self-verify your Mastodon against it by adding `<a rel="me" href="https://retro.pizza/@fordiman" title="Mastodon"></a>` somewhere on the page.
+* If you own a piece of the web, you can self-verify your Fediverse account against it by adding `<a rel="me" href="https://retro.pizza/@fordiman" title="Mastodon"></a>` somewhere on the page, then linking that page in your Mastodon profile's metadata (the table at the bottom of your profile).
 
 ## I Hate the server I joined!
 
