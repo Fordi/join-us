@@ -28,7 +28,9 @@ Mastodon is the closest Fediverse analog to Twitter, and Twitter is my audience 
 * "Favorite" is not "like" - there's no favorite-based algorithm to tune your feed - but you can follow hashtags.
 * If you own a piece of the web, you can self-verify your Mastodon against it by adding `<a rel="me" href="https://retro.pizza/@fordiman" title="Mastodon"></a>` somewhere on the page.
 
-## I Hate the server I joined!  It's slow!  The mods hate me!
+## I Hate the server I joined!
+
+### It's slow!
 
 If you pick a server and it's performing badly or the community sucks, you _can_ jump servers. Create a new account, mark it as an alias of your old account, then tell the old account to migrate to the new one. Whole process takes 5 minutes.
 
@@ -36,6 +38,15 @@ Remember that Mastodon is like if Twitter were hosted like e-mail. From a techni
   
 But get your feet wet first; don't let perfect be your enemy. 
 
+### The mods hate me!
+
+If the mods hate you, think about why before migrating to another instance.  If you're regularly posting hateful rhetoric or misinformation, the next mods will probably hate you as well.
+
+On the other hand, each server is a kind of fiefdom, ruled by an admin.  There are standards that federated (in the network) instances should follow, lest they be defederated, but like all distributed systems, moderation quality and policy can vary.  It may be that you just ran afoul of some niche rule (e.g., WE ONLY ALLOW STAR TREK POSTS HERE!) or mod having a bad day.  This is rare, but it does happen.
+
+If, on reflection, that's what you believe to be the case, by all means, move on.
+
+But the initial self-reflection needs to happen: even if you believe you didn't do anything wrong, approach it from the fact that the mod is responsible for the community, and view your impact through that lens.
 
 ## More notes on etiquette
 
