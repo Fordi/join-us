@@ -3,3 +3,6 @@ a[rel="footnote"], a[rel="reference"] {
   vertical-align: super;
   font-size: 0.66em;
 }
+*[data-click-to-copy] {
+  cursor: copy;
+}

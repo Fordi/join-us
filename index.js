@@ -23,6 +23,23 @@ class MastodonUser {
     return new MastodonUser(m[1], m[2]);
   }
 }
+const copyThis = (el) => {
+  const sel = window.getSelection();
+  sel.removeAllRanges();
+  const range = document.createRange();
+  range.selectNode(el);
+  sel.addRange(range);
+  document.execCommand('copy');
+  sel.removeAllRanges();
+  el.style.backgroundColor = '#3ba164';
+  requestAnimationFrame(() => {
+    el.style.transition = 'background-color 0.4s';
+    el.style.backgroundColor = 'transparent';
+    setTimeout(() => {
+      el.style.transition = '';
+    }, 400);
+  });
+}
 
 export default (doc) => {
   const updateDoc = (mastoHandle) => {
@@ -57,7 +74,12 @@ export default (doc) => {
   const input = doc.querySelector('#mastodonHandle');
   input.value = localStorage.getItem('mastodonHandle') ?? "";
   updateDoc(MastodonUser.fromString(input.value));
-
+  document.body.addEventListener('click', ({ target }) => {
+    const copyWhat = target.closest('[data-click-to-copy]');
+    if (copyWhat) {
+      copyThis(copyWhat);
+    }
+  });
   input.addEventListener('keyup', ({ target }) => {
     const mastoHandle = MastodonUser.fromString(target.value);
     localStorage.setItem('mastodonHandle', mastoHandle?.toString() ?? "");
