@@ -36,15 +36,58 @@
   <body>
     <div class="container-lg px-3 my-5 markdown-body">
       <h1 id="you-should-join-us-over-in-the-fediverse">You should join us over in the Fediverse.</h1>
-      <h2 id="the-what">The what?</h2>
-      <p>The Fediverse.  It’s the term used for the federated server network that’s used by the Twitter-like <a href="https://joinmastodon.org">Mastodon</a>, the Instagram-like <a href="https://pixelfed.org/">Pixelfed</a>, the YouTube-like <a href="https://joinpeertube.org/en">PeerTube</a>, and many others.</p>
-      <p>Your Fediverse account is like an e-mail account - that is, you’re <code class="language-plaintext highlighter-rouge">a user</code> at <code class="language-plaintext highlighter-rouge">a server</code>.  You don’t need to spin up your own server (though, you can), nor do you need to think too hard about which server you join (though, it can matter, long-term<a href="#i-hate-the-server-i-joined"><sup>[1]</sup></a>).</p>
-      <p>In this document, I’m focused on getting you onto Mastodon.</p>
-      <h2 id="getting-you-onto-mastodon">Getting you onto Mastodon</h2>
-      <p>Step 1: <a href="https://joinmastodon.org/servers">Get yourself any Mastodon account</a>.  If you don’t feel like searching the server list, I recommend <a href="https://mastodon.sdf.org">Mastodon @ SDF</a><sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">1</a></sup>.  There's also <a href="https://counter.social/">Counter Social</a>, which is federated with Mastodon, and has its own app.</p>
-      <p>Step 2: Add your Fediverse address to your Twitter bio, e.g., <code class="language-plaintext highlighter-rouge">@myUserName@masto.serv.er</code> - this will help followers who migrate to the Fediverse find you.</p>
-      <p>Step 3: Migrate your follows: Head to <a href="https://pruvisto.org/debirdify">Debirdify</a> and/or <a href="https://fedifinder.glitch.me/">Fedifinder</a> and follow the instructions there. You should do this periodically to pick up new Twitter expats you follow.</p>
-      <p>That’s it!</p>
+      <section>
+        <h2 id="already-here">I'm already there</h2>
+        <p>Awesome!  Welcome to the fold.  This document contains tips for those new to the Fediverse, and
+          can be personalized if you choose to fill out the stuff below.  This information doesn't leave
+          this page or even hit a server; it's just to generate hard links and templates and the like.
+        </p>
+        <p>
+          <label for="mastodonHandle">
+            Your Mastodon handle:
+            <input id="mastodonHandle" placeholder="e.g., @fordiman@retro.pizza"/>
+          </label>
+        </p>
+      </section>
+      
+      <section>
+        <h2 id="the-what">The what?</h2>
+        <p>
+          The Fediverse.  It’s the term used for the federated server network that’s used
+          by the Twitter-like <a href="https://joinmastodon.org">Mastodon</a>, the
+          Instagram-like <a href="https://pixelfed.org/">Pixelfed</a>, the YouTube-like
+          <a href="https://joinpeertube.org/en">PeerTube</a>, and many others.
+        </p>
+        <p>
+          Your Fediverse account is like an e-mail account - that is, you’re
+          <code data-content="mastodonName" class="language-plaintext highlighter-rouge">a user</code> at <code data-content="mastodonServer" class="language-plaintext highlighter-rouge">a server</code>.
+          You don’t need to spin up your own server (though, you can), nor do you need
+          to think too hard about which server you join (<a href="#i-hate-the-server-i-joined">though, it can matter,
+          long-term</a>).
+        </p>
+        <p>
+          In this document, I’m focused on getting you onto Mastodon.
+        </p>
+      </section>
+
+      <section>
+        <h2 id="getting-you-onto-mastodon">Getting you onto Mastodon</h2>
+        <p>
+          Step 1: <a href="https://joinmastodon.org/servers">Get yourself any Mastodon
+            account</a>.  If you don’t feel like searching the server list, I recommend
+            <a href="https://mastodon.sdf.org">Mastodon @ SDF</a><a id="fnref:2" role="doc-noteref" href="#fn:2" class="footnote" rel="footnote">1</a>.  There's also <a href="https://counter.social/">Counter Social</a>, which is federated with Mastodon, and has its own app.
+        </p>
+        <p>
+          Step 2: Add your Fediverse address to your Twitter bio, e.g., <code class="language-plaintext highlighter-rouge" data-content="mastodonHandle">@myUserName@masto.serv.er</code> - this will help followers who migrate to the Fediverse find you.
+        </p>
+        <p>
+          Step 3: Migrate your follows: Head to <a href="https://pruvisto.org/debirdify">Debirdify</a> and/or <a href="https://fedifinder.glitch.me/">Fedifinder</a> and follow the instructions there. You should do this periodically to pick up new Twitter expats you follow.
+        </p>
+        <p data-if="mastodonHandle">
+          Step 4: Import the follows from Debirdify / Fedifinder <a data-href="mastodonImport">in your settings</a>.
+        </p>
+        <p>That’s it!</p>
+      </section>
       <h2 id="why-mastodon">Why Mastodon?</h2>
       <p>Mastodon is the closest Fediverse analog to Twitter, and Twitter is my audience for this document.  It has features that Twitter doesn’t, and lacks features Twitter supports (for now):</p>
       <ul>
@@ -54,12 +97,12 @@
         <li>Should you desire it, you can host your own instance</li>
         <li>There is no text search, so #HashTag liberally.</li>
         <li>“Favorite” is not “like” - there’s no favorite-based algorithm to tune your feed - but you can follow hashtags.</li>
-        <li>If you own a piece of the web, you can self-verify your Mastodon against it by adding <code class="language-html highlighter-rouge">&lt;a rel="me" href="https://retro.pizza/@fordiman" title="Mastodon"&gt;&lt;/a&gt;</code> somewhere on the page.</li>
+        <li>If you own a piece of the web, you can self-verify your Mastodon against it by adding <code class="language-html highlighter-rouge">&lt;a rel="me" href="<span data-content="mastodonLink">https://retro.pizza/@fordiman</span>" title="Mastodon"&gt;&lt;/a&gt;</code> somewhere on the page.</li>
       </ul>
       <h2 id="i-hate-the-server-i-joined">I Hate the server I joined!</h2>
       <h3 id="its-slow">It's slow! They're only talking about 1970's Battlestar Galactica!</h3>
       <p>Remember that Mastodon is like if Twitter were hosted like e-mail. From a technical standpoint, it kinda doesn't matter which server you're on. From a community or performance standpoint, it can matter.</p>
-      <p>If you pick a server and it's performing badly or the community sucks, you _can_ jump servers. Create a new account, mark it as an alias of your old account, then tell the old account to migrate to the new one.  Both of these options are at the bottom of your "Edit Profile" page, and the whole process takes 5 minutes.</p>
+      <p>If you pick a server and it's performing badly or the community sucks, you _can_ jump servers. Create a new account, mark it as an alias of your old account, then tell the old account to migrate to the new one.  Both of these options are <a data-href="mastodonMigrate">at the bottom of your "Edit Profile" page</a>, and the whole process takes 5 minutes.</p>
       <p>But get your feet wet first and just join a server; don't let perfect be your enemy.</p>
       <h3 id="the-mods-hate-me">
       The mods hate me!</h2>
@@ -110,5 +153,9 @@
     <a href="https://retro.pizza/@fordiman" rel="me" title="Mastodon"></a>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
     <script>anchors.add();</script>
+    <script type="module">
+      import handler from "./index.js";
+      handler(document);
+    </script>
   </body>
 </html>
