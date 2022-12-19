@@ -13,8 +13,8 @@ class MastodonUser {
     if (!handle) return null;
     try {
       const u = new URL(handle);
-      if (/^@[a-zA-Z0-9_]+$/.test(u.pathname)) {
-        return new MastodonUser(u.pathname.substring(1), u.host);
+      if (/^\/@[a-zA-Z0-9_]+$/.test(u.pathname)) {
+        return new MastodonUser(u.pathname.substring(2), u.host);
       }
     } catch (e) { }
     const m = handle.match(/^@?([a-zA-Z0-9_]+)@([a-zA-Z0-9_\-.]+)$/);
@@ -66,7 +66,6 @@ export default (doc) => {
         tgt.innerHTML = subs[tgt.getAttribute('data-content')] ?? tgt.getAttribute('data-orig-content');;
       }
       if (tgt.getAttribute('data-if')) {
-        console.log('hi');
         tgt.style.display = subs[tgt.getAttribute('data-if')] ? '' : 'none';
       }
     });
