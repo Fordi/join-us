@@ -50,6 +50,8 @@ export default (doc) => {
       mastodonHandle: mastoHandle?.toString(),
       mastodonLink: mastoHandle?.toHref(),
       mastodonMigrate: !!mastoHandle && `https://${mastoHandle.host}/settings/profile#:~:text=Move%20to%20a%20different%20account`,
+      mastodonSettings: !!mastoHandle && `https://${mastoHandle.host}/settings`,
+      mastodonAbout: !!mastoHandle && `https://${mastoHandle.host}/about`,
     };
     const targets = [...doc.querySelectorAll('[data-content], [data-href], [data-if]')];
     targets.forEach(tgt => {
@@ -73,10 +75,12 @@ export default (doc) => {
   const input = doc.querySelector('#mastodonHandle');
   input.value = localStorage.getItem('mastodonHandle') ?? "";
   updateDoc(MastodonUser.fromString(input.value));
-  document.body.addEventListener('click', ({ target }) => {
-    const copyWhat = target.closest('[data-click-to-copy]');
+  document.body.addEventListener('click', (event) => {
+    const copyWhat = event.target.closest('[data-click-to-copy]');
     if (copyWhat) {
       copyThis(copyWhat);
+      event.preventDefault();
+      return false;
     }
   });
   input.addEventListener('keyup', ({ target }) => {

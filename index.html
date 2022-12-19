@@ -48,6 +48,22 @@
             <input id="mastodonHandle" placeholder="e.g., @fordiman@retro.pizza"/>
           </label>
         </p>
+        <p data-if="mastodonHandle">
+          <table>
+            <tr>
+              <td>Handle:</td>
+              <td data-content="mastodonHandle" data-click-to-copy></td>
+            </tr>
+            <tr>
+              <td>Profile link:</td>
+              <td><a data-href="mastodonLink" data-content="mastodonLink" data-click-to-copy></a></td>
+            </tr>
+            <tr>
+              <td>Settings page:</td>
+              <td><a data-href="mastodonSettings" data-content="mastodonSettings" data-click-to-copy></a></td>
+            </tr>
+          </table>
+        </p>
       </section>
       
       <section>
@@ -88,59 +104,77 @@
         </p>
         <p>That’s it!</p>
       </section>
-      <h2 id="why-mastodon">Why Mastodon?</h2>
-      <p>Mastodon is the closest Fediverse analog to Twitter, and Twitter is my audience for this document.  It has features that Twitter doesn’t, and lacks features Twitter supports (for now):</p>
-      <ul>
-        <li>No ads. No "promoted tweets".  Bots must be marked as such.</li>
-        <li>500 character limit on posts, rather than 280</li>
-        <li>“Content warnings” as a first-class feature.  They’re about equivalent to subject lines, and people in the Fediverse use them to keep their timeline tidy, and to avoid seeing content they’d rather not (e.g., porn, gore, violence).  Basically, your use of them lets others determine their own level of engagement.  You’re expected to use them, but they’re not mandatory.  It’s a matter of politeness.</li>
-        <li>Should you desire it, you can host your own instance</li>
-        <li>There is no text search, so #HashTag liberally.</li>
-        <li>“Favorite” is not “like” - there’s no favorite-based algorithm to tune your feed - but you can follow hashtags.</li>
-        <li>If you own a piece of the web, you can self-verify your Mastodon against it by adding <code data-click-to-copy class="language-html highlighter-rouge">&lt;a rel="me" href="<span data-content="mastodonLink">https://my.server.instance/@my_username</span>" title="Mastodon"&gt;&lt;/a&gt;</code> somewhere on the page<span data-if="mastodonLink"> (you can click that code to copy it)</span>.</li>
-      </ul>
-      <h2 id="i-hate-the-server-i-joined">I Hate the server I joined!</h2>
-      <h3 id="its-slow">It's slow! They're only talking about 1970's Battlestar Galactica!</h3>
-      <p>Remember that Mastodon is like if Twitter were hosted like e-mail. From a technical standpoint, it kinda doesn't matter which server you're on. From a community or performance standpoint, it can matter.</p>
-      <p>If you pick a server and it's performing badly or the community sucks, you _can_ jump servers. Create a new account, mark it as an alias of your old account, then tell the old account to migrate to the new one.  Both of these options are <a data-href="mastodonMigrate">at the bottom of your "Edit Profile" page</a>, and the whole process takes 5 minutes.</p>
-      <p>But get your feet wet first and just join a server; don't let perfect be your enemy.</p>
-      <h3 id="the-mods-hate-me">
-      The mods hate me!</h2>
-      <p>If the mods hate you, think about why before migrating to another instance.  If you're regularly posting hateful rhetoric or misinformation, the next mods will probably hate you as well.</p>
-      <p>On the other hand, each server is a kind of fiefdom, ruled by an admin.  There are standards that federated (in the network) instances should follow, lest they be defederated, but like all distributed systems, moderation quality and policy can vary.  It may be that you just ran afoul of some niche rule (e.g., WE ONLY ALLOW STAR TREK POSTS HERE!) or mod having a bad day.  This is rare, but it does happen.</p>
-      <p>If, on reflection, that's what you believe to be the case, by all means, move on.</p>
-      <p>But the initial self-reflection needs to happen: even if you believe you didn't do anything wrong, approach it from the fact that the mod is responsible for the community, and view your impact through that lens.</p>
-      <h2 id="more-notes-on-etiquette">More notes on etiquette</h2>
-      <ul>
-        <li>
-          <p>Favorites are nice - they let the author know you enjoyed their content - but boosts (mastodon for “re-tweets”) are what build the community. Boost often.</p>
-        </li>
-        <li>
-          <p>As in anything, look for the helpers. If you find someone being helpful, follow and boost them so they can reach others!</p>
-          <p>And, you know, also <em>be</em> a helper if you can!</p>
-        </li>
-        <li>
-          <p>A note about cross-posters (e.g., <a href="https://moa.party">moa.party</a>): if you’re going to use one (which I don’t really recommend), post to Mastodon and let the cross-poster post to Twitter.</p>
-          <p>The reason: Mastodon is more featureful, with the built-in content warnings and larger char limit.</p>
-          <p>Going the other way makes it harder for existing Mastodon users to keep their feed tidy. So, you know, enter someone else’s house like a polite guest and stuff.</p>
-          <p>I don’t recommend them in general because - besides the etiquette violation explained above - automated cross-posts from Mastodon to Twitter tend to get poorly formatted and broken up.  The 500-char limit on Mastodon doesn’t fit neatly into a 280-character Twitterbox, especially not with a byline and link.  When I <em>do</em> cross-post from Mastodon to Twitter, I’ll usually paraphrase the original for length, and link to it.</p>
-        </li>
-        <li>
-          <p>Remember: you don't have to drop Twitter.  I didn't.  In fact, it's easier to migrate if you don't - more Twitter-expats can find you, and you can use <a href="https://pruvisto.org/debirdify">Debirdify</a> and/or <a href="https://fedifinder.glitch.me/">Fedifinder</a> to locate your follows as they migrate over.</p>
-          <p>And, lets face it, all the awful, fun-to-yell-at people are still over there and unlikely to move.</p>
-        </li>
-      </ul>
-      <h2 id="more-on-content-warnings">More on content warnings</h2>
-      <p>You can configure your account to never hide them; it’s how I roll, at least. Configured this way, I think about them more as subject lines, and you should too. So your politics posts get a helpful “USPOL” lead-in, for example.</p>
-      <p>They’re not a bad thing; they’re really useful for the community.</p>
-      <h2 id="in-closing">In closing</h2>
-      <p>Come, join us! Get over here before the bird site collapses under the weight of Elon’s stupid.</p>
-      <h2 id="your-primer-sucks">Your primer sucks!</h2>
-      <p>Then, please, help me make it better!</p>
-      <ul>
-        <li>You can head to the <a href="https://github.com/Fordi/join-us/issues">issues page</a> and request additional information be added to it.</li>
-        <li>You can clone the <a href="https://github.com/Fordi/join-us">repository</a> and create a PR against it.</li>
-      </ul>
+      <section>
+        <h2 id="why-mastodon">Why Mastodon?</h2>
+        <p>Mastodon is the closest Fediverse analog to Twitter, and Twitter is my audience for this document.  It has features that Twitter doesn’t, and lacks features Twitter supports (for now):</p>
+        <ul>
+          <li>No ads. No "promoted tweets".  Bots must be marked as such.</li>
+          <li>500 character limit on posts, rather than 280</li>
+          <li>“Content warnings” as a first-class feature.  They’re about equivalent to subject lines, and people in the Fediverse use them to keep their timeline tidy, and to avoid seeing content they’d rather not (e.g., porn, gore, violence).  Basically, your use of them lets others determine their own level of engagement.  You’re expected to use them, but they’re not mandatory.  It’s a matter of politeness.</li>
+          <li>Should you desire it, you can host your own instance</li>
+          <li>There is no text search, so #HashTag liberally.</li>
+          <li>“Favorite” is not “like” - there’s no favorite-based algorithm to tune your feed - but you can follow hashtags.</li>
+          <li>If you own a piece of the web, you can self-verify your Mastodon against it by adding <code data-click-to-copy class="language-html highlighter-rouge">&lt;a rel="me" href="<span data-content="mastodonLink">https://my.server.instance/@my_username</span>" title="Mastodon"&gt;&lt;/a&gt;</code> somewhere on the page<span data-if="mastodonLink"> (you can click that code to copy it)</span>.</li>
+        </ul>
+      </section>
+      <section>
+        <h2 id="i-hate-the-server-i-joined">I Hate the server I joined!</h2>
+        <section>
+          <h3 id="its-slow">It's slow! They're only talking about 1970's Battlestar Galactica!</h3>
+          <p>Remember that Mastodon is like if Twitter were hosted like e-mail. From a technical standpoint, it kinda doesn't matter which server you're on. From a community or performance standpoint, it can matter.</p>
+          <p>If you pick a server and it's performing badly or the community sucks, you _can_ jump servers. Create a new account, mark it as an alias of your old account, then tell the old account to migrate to the new one.  Both of these options are <a data-href="mastodonMigrate">at the bottom of your "Edit Profile" page</a>, and the whole process takes 5 minutes.</p>
+          <p>But get your feet wet first and just join a server; don't let perfect be your enemy.</p>
+        </section>
+        <section>
+          <h3 id="the-mods-hate-me">The mods hate me!</h3>
+          <p>If the mods hate you, think about why before migrating to another instance.  If you're regularly posting hateful rhetoric or misinformation, the next mods will probably hate you as well.</p>
+          <p>On the other hand, each server is a kind of fiefdom, ruled by an admin.  There are standards that federated (in the network) instances should follow, lest they be defederated, but like all distributed systems, moderation quality and policy can vary.  It may be that you just ran afoul of some niche rule (e.g., WE ONLY ALLOW STAR TREK POSTS HERE!) or mod having a bad day.  This is rare, but it does happen.</p>
+          <p>If, on reflection, that's what you believe to be the case, by all means, move on.</p>
+          <p>But the initial self-reflection needs to happen: even if you believe you didn't do anything wrong, approach it from the fact that the mod is responsible for the community, and view your impact through that lens.</p>
+        </section>
+      </section>
+      <section>
+        <h2 id="more-notes-on-etiquette">More notes on etiquette</h2>
+        <ul>
+          <li>
+            <p>Favorites are nice - they let the author know you enjoyed their content - but boosts (mastodon for “re-tweets”) are what build the community. Boost often.</p>
+          </li>
+          <li>
+            <p>As in anything, look for the helpers. If you find someone being helpful, follow and boost them so they can reach others!</p>
+            <p>And, you know, also <em>be</em> a helper if you can!</p>
+          </li>
+          <li>
+            <p>A note about cross-posters (e.g., <a href="https://moa.party">moa.party</a>): if you’re going to use one (which I don’t really recommend), post to Mastodon and let the cross-poster post to Twitter.</p>
+            <p>The reason: Mastodon is more featureful, with the built-in content warnings and larger char limit.</p>
+            <p>Going the other way makes it harder for existing Mastodon users to keep their feed tidy. So, you know, enter someone else’s house like a polite guest and stuff.</p>
+            <p>I don’t recommend them in general because - besides the etiquette violation explained above - automated cross-posts from Mastodon to Twitter tend to get poorly formatted and broken up.  The 500-char limit on Mastodon doesn’t fit neatly into a 280-character Twitterbox, especially not with a byline and link.  When I <em>do</em> cross-post from Mastodon to Twitter, I’ll usually paraphrase the original for length, and link to it.</p>
+          </li>
+          <li>
+            <p>Remember: you don't have to drop Twitter.  I didn't.  In fact, it's easier to migrate if you don't - more Twitter-expats can find you, and you can use <a href="https://pruvisto.org/debirdify">Debirdify</a> and/or <a href="https://fedifinder.glitch.me/">Fedifinder</a> to locate your follows as they migrate over.</p>
+            <p>And, lets face it, all the awful, fun-to-yell-at people are still over there and unlikely to move.</p>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2 id="more-on-content-warnings">More on content warnings</h2>
+        <p>You can configure your account to never hide them; it’s how I roll, at least. Configured this way, I think about them more as subject lines, and you should too. So your politics posts get a helpful “USPOL” lead-in, for example.</p>
+        <p>They’re not a bad thing; they’re really useful for the community.</p>
+        <h2 id="in-closing">In closing</h2>
+        <p>Come, join us! Get over here before the bird site collapses under the weight of Elon’s stupid.</p>
+        <h2 id="your-primer-sucks">Your primer sucks!</h2>
+        <p>Then, please, help me make it better!</p>
+        <ul>
+          <li>You can head to the <a href="https://github.com/Fordi/join-us/issues">issues page</a> and request additional information be added to it.</li>
+          <li>You can clone the <a href="https://github.com/Fordi/join-us">repository</a> and create a PR against it.</li>
+        </ul>
+      </section>
+      <section data-if="mastodonAbout">
+        <h2>Support your local instance!</h2>
+        <p>
+          Remember that your instance is run by regular people out of their own
+          pockets!  You should check your instance's <a data-href="mastodonAbout">About page</a> to see if you can lend them some assistance!
+        </p>
+      </section>
       <hr />
       <div class="footnotes" role="doc-endnotes">
         <ol>
